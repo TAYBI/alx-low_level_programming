@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c $CFILE -o $(dirname $CFILE)/$(basename $CFILE .c).s
