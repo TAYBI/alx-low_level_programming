@@ -2,9 +2,8 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * Description: main-print the last degit of a number
- *
- * Return succes 0 if succes
+ * Description: main - print the last degit of a number
+ * Return: 0 if success.
  */
 int main(void)
 {
@@ -12,11 +11,13 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int last_degit = n % 10;
 
-	if (last_degit > 5)
-		printf("Last digit of %d is %d and is greater than 5", n, last_degit);
-	else if ((last_degit < 6) && (last_degit != 0))
+	if ((n % 10) > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, (n % 10));
+	else if (((n % 10) < 6) && ((n % 10) != 0))
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, (n % 10));
+	else
+		printf("Last digit of %d is %d and is 0\n", n, (n % 10));
 
 	return (0);
 }
