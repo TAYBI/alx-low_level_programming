@@ -6,22 +6,17 @@
 int main(void)
 {
 	int number;
-	int sp;
 
 	while (number != 10)
 	{
 		putchar(48 + number);
-	
-		if (number == 9)
-			sp = 36;
-		else
-			sp = 44;
-	
-		putchar(sp);
-		
+
 		if (number != 9)
+		{
+			putchar(44);
 			putchar(32);
-	
+		}
+
 		number++;
 	}
 	putchar('\n');
