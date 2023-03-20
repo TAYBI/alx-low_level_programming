@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * Description: main - print alphabet except p and e
- * Return 0 if success
+ * Description: main - print alphabet
+ * Return: 0 if success
  */
 int main(void)
 {
