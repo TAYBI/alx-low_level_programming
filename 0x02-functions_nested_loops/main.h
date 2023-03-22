@@ -10,4 +10,9 @@ int _putchar(char c);
  * print_alphabet _ print chacter 
  */
 void print_alphabet(void);
+
+/**
+ * print_alphabetx _ print chacter 10 times
+ */
+void print_alphabet_x10(void);
 #endif
