@@ -1,4 +1,4 @@
-#include "main"
+#include "main.n"
 /**
  * print_diagonal - prints diagonal stuff
  *
